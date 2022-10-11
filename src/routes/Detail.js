@@ -34,6 +34,7 @@ function Detail() {
             rating={movie.rating}
             runtime={movie.runtime}
             downLoadCount={movie.download_count}
+            descriptionFull={movie.description_full}
           />
         </div>
       )}

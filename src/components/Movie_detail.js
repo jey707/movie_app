@@ -9,6 +9,7 @@ function Movie_detail({
   rating,
   runtime,
   downLoadCount,
+  descriptionFull,
 }) {
   return (
     <div>
@@ -21,6 +22,7 @@ function Movie_detail({
         <p>runtime:{runtime}</p>
       </div>
       <span>{slug}</span>
+      <p>{descriptionFull}</p>
     </div>
   );
 }
@@ -28,6 +30,7 @@ function Movie_detail({
 Movie_detail.propType = {
   id: PropTypes.number.isRequired,
   coverImg: PropTypes.string.isRequired,
+  descriptionFull: PropTypes.string.isRequired,
   slug: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
   likeCount: PropTypes.number,
